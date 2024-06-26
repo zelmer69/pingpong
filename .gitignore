@@ -1,2 +1,6 @@
 
 /Saved
+/.vs
+/Intermediate
+*.sln
+.vsconfig
