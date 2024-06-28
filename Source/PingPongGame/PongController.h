@@ -11,12 +11,12 @@
  * 
  */
 UCLASS()
-class PINGPONG_API APongController : public APlayerController, public IPlayerInterface
+class PINGPONGGAME_API APongController : public APlayerController, public IPlayerInterface
 {
 	GENERATED_BODY()
 public:
 	virtual void move(FVector2D Direction)override;
 
-	 UFUNCTION(Server, Reliable)
+	 UFUNCTION(Server, Reliable)// replicated function for movement 
 	 void RPC_Location(FVector Loc);
 };

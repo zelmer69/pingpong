@@ -26,6 +26,6 @@ class IPlayerInterface
 
 public:
 
-	virtual void move(FVector2D Direction){}
+	virtual void move(FVector2D Direction) {}
 
 };

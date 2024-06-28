@@ -10,7 +10,7 @@
 
 UCLASS()
 
-class PINGPONG_API APongPlayer : public APawn
+class PINGPONGGAME_API APongPlayer : public APawn
 {
 	GENERATED_BODY()
 
@@ -22,14 +22,14 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput")
 	UInputAction* MoveAction;// Input Action for moving left-right
 
 	void Move(const FInputActionValue& Value);// Function for reciving input 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "EnhancedInput") // Input context 
-	UInputMappingContext* InputMapping;
+		UInputMappingContext* InputMapping;
 	IPlayerInterface* ControllerInterface;//Interface from controller
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

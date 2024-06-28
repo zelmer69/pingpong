@@ -1,11 +1,11 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.1",
+	"EngineAssociation": "{7726758A-4360-9414-1F63-65A997B774FC}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "PingPong",
+			"Name": "PingPongGame",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
@@ -21,8 +21,5 @@
 				"Editor"
 			]
 		}
-	],
-	"TargetPlatforms": [
-		"Windows"
 	]
 }

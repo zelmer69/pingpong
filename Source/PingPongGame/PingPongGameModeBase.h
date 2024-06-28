@@ -10,9 +10,14 @@
  * 
  */
 UCLASS()
-class PINGPONG_API APingPongGameModeBase : public AGameModeBase
+class PINGPONGGAME_API APingPongGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 
-
+public:
+	UFUNCTION(BlueprintCallable)
+	FString RegisterNewPlayer(APlayerController* NewPlayer);
+	UFUNCTION(BlueprintNativeEvent)
+	void StartGame();
+	
 };
